@@ -13,8 +13,8 @@ function mostrarScroll(){
     let scrollTop = document.documentElement.scrollTop;
     for (let i = 0; i < perfil.length; i++) {
         const alturaPerfil = perfil[i].offsetTop;
-        if(alturaPerfil - 600 < scrollTop){
-            nav[i].style.opacity = 1;
+        if(alturaPerfil - 300 < scrollTop){
+            nav[i].style.backgroundColor = "Black";
             perfil[i].style.opacity = 1;
             barra.style.opacity = 1;
             barra.classList.add('animacion3');
@@ -24,6 +24,8 @@ function mostrarScroll(){
             }
             titulo.style.opacity = 1;
             titulo.classList.add('animacion2');
+        }else{
+            nav[i].style.backgroundColor = "transparent";
         }
     }
 
