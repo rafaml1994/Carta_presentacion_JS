@@ -1,0 +1,164 @@
+/* Cuerpo de la pagina */
+body{
+    background-color: white;
+}
+/* Hacer desaparecer la barra de scroll */
+::-webkit-scrollbar{
+    display: none;
+}
+/* menu de navegacion */
+
+nav{
+    position: fixed;
+    opacity: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+   
+}
+ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: .5rem;
+    
+}
+li{
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.5em;
+    
+}
+a{  
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.671);
+    text-transform: uppercase;
+    font-size: medium;
+    padding-inline: 1em;
+    padding-bottom: .5rem;
+    border-bottom: 4px solid white;
+    border-color: transparent;
+    font-weight: bold; 
+}
+a:hover{
+    transition: all .3s;
+    font-weight: bold;
+    color: white;
+    border-color: white;
+}
+.perfil{
+    opacity: 0;
+    transition: 1s;
+}
+#perfil{
+    height: 60rem;
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.938);
+}
+.perfil{
+    padding: 5rem;
+}
+.perfil img{
+    float: left;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20px;
+    margin: 5rem;
+    border-radius: 50px;
+    box-shadow:  20px 20px 60px #575757,
+             -20px -20px 60px #ffffff;
+}
+
+/* Estilos de los titulos */
+
+#titulo1{
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#barra{
+    opacity: 0;
+
+}
+#titulo2{
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#barr2{
+    opacity: 0;
+
+}
+
+/* Estilos de las cards */
+
+.card-group{
+    /* display: grid;
+    gap: 1rem;
+    grid-auto-rows: 30rem;
+    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr)); */
+    
+}
+.flexcards{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+.card{
+   width: 100%;
+}
+
+
+/* mostrar el opacity del scroll */
+
+.animado{ 
+
+    background-color: rgb(148, 148, 148);
+    opacity: 0;
+    transition: all .5s;
+    padding: 5rem;
+}
+
+/* Animacion para mostrarlo desde abajo hacia arriba */
+
+.animacion{
+    animation: mostrar 2s;
+}
+
+@keyframes mostrar {
+    0%{
+        transform: translateY(5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Animacion de izquierda a derecha */
+
+.animacion2{
+    animation: mostrar2 2s;
+}
+
+@keyframes mostrar2 {
+    0%{
+        transform: translateX(-5rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*Animacion de izq a derecha mas segundos*/
+
+.animacion3{
+    animation: mostrar3 2s;
+}
+
+@keyframes mostrar3 {
+    0%{
+        transform: translateX(-20rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
