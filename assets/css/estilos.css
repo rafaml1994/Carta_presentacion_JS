@@ -1,6 +1,6 @@
 /* Cuerpo de la pagina */
 body{
-    background-color: white;
+    background-color: rgb(128, 128, 128);
 }
 /* Hacer desaparecer la barra de scroll */
 ::-webkit-scrollbar{
