@@ -1,5 +1,5 @@
 let animado = document.getElementsByClassName('animado');
-let animar = document.getElementsByClassName('card');
+let animar = document.getElementsByClassName('cardd');
 let nav = document.getElementsByTagName('nav');
 let perfil = document.getElementsByClassName('perfil');
 let titulo = document.getElementById('titulo1');
@@ -15,6 +15,7 @@ function mostrarScroll(){
         const alturaPerfil = perfil[i].offsetTop;
         if(alturaPerfil - 300 < scrollTop){
             nav[i].style.backgroundColor = "Black";
+            nav[i].style.boxShadow ="0px 3px 8px black"
             perfil[i].style.opacity = 1;
             barra.style.opacity = 1;
             barra.classList.add('animacion3');
@@ -26,6 +27,7 @@ function mostrarScroll(){
             titulo.classList.add('animacion2');
         }else{
             nav[i].style.backgroundColor = "transparent";
+            nav[i].style.boxShadow =""
         }
     }
 
@@ -46,5 +48,35 @@ function mostrarScroll(){
     }
 }
 
+//Overlay card
+
+let background = document.getElementsByClassName('background');
+let img = document.getElementsByClassName('imagenScale');
+let texto = document.getElementsByClassName('texto');
+
+for (let i = 0; i< animar.length; i++) {
+    animar[i].addEventListener('mouseover',mostrarTexto);
+}
+for (let i = 0; i< animar.length; i++) {
+    animar[i].addEventListener('mouseout',ocultarTexto);
+}
+function mostrarTexto(){
+    for (let i = 0; i < animar.length; i++) {
+        background[i].style.width="100%";
+        img[i].style.transform = "scale(1.2)";
+        texto[i].style.opacity= 1;
+        texto[i].style.transition="all 1s ease-in-out";
+    }
+}
+function ocultarTexto(){
+    for (let i = 0; i < background.length; i++) {
+        background[i].style.width="0%";
+        img[i].style.transform = "";
+        texto[i].style.opacity= 0;
+        texto[i].style.transition="all 0.1s";
+    }
+}
 
 window.addEventListener('scroll',mostrarScroll);
+
+
