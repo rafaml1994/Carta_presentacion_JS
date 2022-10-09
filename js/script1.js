@@ -51,22 +51,22 @@ function mostrarScroll(){
 //Overlay card
 
 let background = document.getElementsByClassName('background');
-let img = document.getElementsByClassName('imagenScale');
+let img = document.getElementsByClassName('imagenScale');   //Ver como puedo capturar el evento
 let texto = document.getElementsByClassName('texto');
 
-for (let i = 0; i< animar.length; i++) {
-    animar[i].addEventListener('mouseover',mostrarTexto);
-}
+
 for (let i = 0; i< animar.length; i++) {
     animar[i].addEventListener('mouseout',ocultarTexto);
 }
-function mostrarTexto(){
-    for (let i = 0; i < animar.length; i++) {
-        background[i].style.width="100%";
-        img[i].style.transform = "scale(1.2)";
-        texto[i].style.opacity= 1;
-        texto[i].style.transition="all 1s ease-in-out";
-    }
+
+//Opción no muy óptima, mejor hacerlo a través de CSS
+function mostrarTexto(respuesta){
+    let i = respuesta
+    background[i].style.width="100%";
+    img[i].style.transform = "scale(1.2)";
+    texto[i].style.opacity= 1;
+    texto[i].style.transition="all 1s ease-in-out";
+   
 }
 function ocultarTexto(){
     for (let i = 0; i < background.length; i++) {
