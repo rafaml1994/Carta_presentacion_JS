@@ -15,6 +15,9 @@ body{
     background-color: rgba(0, 0, 0, 0);
    
 }
+.mobile{
+    visibility: hidden;
+}
 ul{
     display: flex;
     align-items: center;
@@ -213,19 +216,23 @@ li a:hover{
 }
 /* Media query para mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     .web {
     display: none;
     }
     .mobile{
         color: black;
-        position: fixed;
-        z-index: 999;
+        visibility: visible;
         width: 37%;
     }
     .mobile ul{
         opacity: 1;
-        background-color: red;
+        background-color: rgb(22, 22, 24);
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        top: 0;
+        box-shadow: 3px 3px 10px rgb(0, 0, 0);
     }
     .btn-collapse{
         display: flex;
@@ -234,6 +241,7 @@ li a:hover{
         justify-content: center;
         color: black;
         background-color: blue;
+        position: relative;
     }
     .btn-collapse li a{
         color: black;
