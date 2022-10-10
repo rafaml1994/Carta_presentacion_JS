@@ -77,7 +77,6 @@ li a:hover{
 }
 #barra{
     opacity: 0;
-
 }
 #titulo2{
     opacity: 0;
@@ -85,7 +84,6 @@ li a:hover{
 }
 #barr2{
     opacity: 0;
-
 }
 
 /* Estilos de las cards */
@@ -220,9 +218,53 @@ li a:hover{
     display: none;
     }
     .mobile{
-        background-color: black;
+        color: black;
+        position: fixed;
+        z-index: 999;
+        width: 37%;
     }
     .mobile ul{
-        opacity: 0;
+        opacity: 1;
+        background-color: red;
+    }
+    .btn-collapse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background-color: blue;
+    }
+    .btn-collapse li a{
+        color: black;
+        border-bottom: none;
+    }
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: none;
+        opacity: 1;
+        padding: 1rem;    
+        background-color: green;
+    }
+    #perfil{
+        padding: 1rem;
+        background-color: aqua;
+        text-align: center;
+    }
+    #titulo1{
+        opacity: 1;
+        margin: 0%;
+        padding: 0%;
+    }
+    #barra{
+        display: none;
+    }
+    .perfil img{
+        margin: 1rem;
+        border-radius: 1rem;
+        box-shadow:  5px 5px 15px #201e1e 
     }
   }
