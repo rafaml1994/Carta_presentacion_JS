@@ -1,6 +1,6 @@
 /* Cuerpo de la pagina */
 body{
-    background-color: rgb(128, 128, 128);
+    background-color: #fbfbfe;
 }
 /* Hacer desaparecer la barra de scroll */
 ::-webkit-scrollbar{
@@ -54,7 +54,7 @@ li a:hover{
 #perfil{
     height: 60rem;
     padding: 5rem;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: #fbfbfe;
 }
 .perfil{
     padding: 5rem;
@@ -65,7 +65,7 @@ li a:hover{
     height: 20rem;
     margin: 5rem;
     border-radius: 1rem;
-    box-shadow:  20px 20px 60px #575757,
+    box-shadow:  5px 5px 15px #201e1e,
              -20px -20px 60px #ffffff;
 }
 
@@ -100,6 +100,8 @@ li a:hover{
 .cardd{
    position: relative;
    cursor:pointer;
+   box-shadow: 3px 3px 10px black;
+   border-radius: 1rem; 
 }
 .cardd figure{
     padding: 0;
@@ -136,10 +138,30 @@ li a:hover{
     align-items: center;
     opacity: 0;
 }
+
+/* Overlay */
+
+.textoOverlay{
+    padding: 1rem;
+}
+.linkOverlay{
+    text-decoration: none;
+    color:white;
+    border: white;
+    border-radius: .3rem;
+    border-style:solid;
+    padding-inline: 3rem;
+    padding-block: 1.2rem;
+    text-transform: uppercase;
+    font-size: large;
+}
+.linkOverlay:hover{
+    color: white;
+}
 /* mostrar el opacity del scroll */
 
 .animado{ 
-    background-color: rgb(148, 148, 148);
+    background-color: #a0a7ac;
     opacity: 0;
     transition: all .5s;
     padding: 5rem;

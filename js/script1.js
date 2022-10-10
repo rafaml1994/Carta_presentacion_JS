@@ -53,21 +53,28 @@ function mostrarScroll(){
 let background = document.getElementsByClassName('background');
 let img = document.getElementsByClassName('imagenScale');   //Ver como puedo capturar el evento
 let texto = document.getElementsByClassName('texto');
+let tituloOverlay = document.getElementsByClassName('tituloOverlay');
+let linkOverlay = document.getElementsByClassName('linkOverlay');
 
+for (let i = 0; i< animar.length; i++) {
+    animar[i].addEventListener('mouseover',mostrarTexto);
+    function mostrarTexto(e){
+        let evento = e.target;
+        if(evento && evento.className === 'imagenScale' || evento.className === 'background' || evento.className === 'texto' || evento.className === 'tituloOverlay' || evento.className === 'linkOverlay' || evento.className === 'textoOverlay'){
+            background[i].style.width="100%";
+            img[i].style.transform = "scale(1.2)";
+            texto[i].style.transition="all 2.5s ease-in-out";   
+            texto[i].style.opacity= 1;  
+        }
+    }
+}
 
 for (let i = 0; i< animar.length; i++) {
     animar[i].addEventListener('mouseout',ocultarTexto);
 }
 
 //Opción no muy óptima, mejor hacerlo a través de CSS
-function mostrarTexto(respuesta){
-    let i = respuesta
-    background[i].style.width="100%";
-    img[i].style.transform = "scale(1.2)";
-    texto[i].style.opacity= 1;
-    texto[i].style.transition="all 1s ease-in-out";
-   
-}
+
 function ocultarTexto(){
     for (let i = 0; i < background.length; i++) {
         background[i].style.width="0%";
