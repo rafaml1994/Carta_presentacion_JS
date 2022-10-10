@@ -7,7 +7,6 @@ let barra = document.getElementById('barra');
 let barra2 = document.getElementById('barra2');
 let titulo2 = document.getElementById('titulo2');
 
-//Cuando cogemos varios elementos debemos iterarlos para que funcionen en los bucles, de esta manera no da fallo aunque solo cojas a uno.
 
 function mostrarScroll(){
     let scrollTop = document.documentElement.scrollTop;
@@ -30,8 +29,6 @@ function mostrarScroll(){
             nav[i].style.boxShadow =""
         }
     }
-
-    //Si queremos animar cada card de manera que salgan en distinto tiempo, agregar id a las cards y cambiar los segundos en el keyframe
     
     for (let i = 0; i < animado.length; i++) {
         const alturaAnimado = animado[i].offsetTop;
@@ -51,11 +48,12 @@ function mostrarScroll(){
 //Overlay card
 
 let background = document.getElementsByClassName('background');
-let img = document.getElementsByClassName('imagenScale');   //Ver como puedo capturar el evento
+let img = document.getElementsByClassName('imagenScale');  
 let texto = document.getElementsByClassName('texto');
 let tituloOverlay = document.getElementsByClassName('tituloOverlay');
 let linkOverlay = document.getElementsByClassName('linkOverlay');
 
+//También se puede realizar a través de CSS, pero he querido usar "event.target" y conocer un poco mejor su funcionamiento
 for (let i = 0; i< animar.length; i++) {
     animar[i].addEventListener('mouseover',mostrarTexto);
     function mostrarTexto(e){
@@ -73,7 +71,6 @@ for (let i = 0; i< animar.length; i++) {
     animar[i].addEventListener('mouseout',ocultarTexto);
 }
 
-//Opción no muy óptima, mejor hacerlo a través de CSS
 
 function ocultarTexto(){
     for (let i = 0; i < background.length; i++) {
