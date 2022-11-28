@@ -1,107 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="plugins/particulas/demo/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="plugins/particulas/demo/css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <title>Portfolio</title>
 </head>
+
 <body>
+  <div>
     <nav class="web">
-        <ul>
-            <!-- Hacerlo todo en la misma página, redireccionando -->
-            <li><a href="#perfil">Sobre mí</a></li>
-            <li><a href="#animado">Proyectos</a></li>
-            <li><a href="assets\pdf\CV_Rafa_Martínez.pdf" target="_blank">Descargar CV</a></li>
-        </ul>
+      <ul>
+        <!-- Hacerlo todo en la misma página, redireccionando -->
+        <li><a href="#perfil">Sobre mí</a></li>
+        <li><a href="#animado">Proyectos</a></li>
+        <li><a href="assets\pdf\CV_Rafa_Martínez.pdf" target="_blank">Descargar CV</a></li>
+      </ul>
     </nav>
     <header>
-        <div id="particles-js">
+      <div id="particles-js">
 
-        </div>
+      </div>
     </header>
     <nav class="mobile">
-      <ul>
-        <a id="iconMobile"><span class="material-symbols-outlined">
+      <a id="iconMobile"><span class="material-symbols-outlined">
           menu
-          </span></a>
+        </span></a>
+      <ul>
         <div class="btn_collapse">
-          <li><a href="#perfil">Sobre mi</a></li>
-          <li><a href="#animado">Proyectos</a></li>
-          <li><a href="assets/pdf/CV_Rafa_Martínez.pdf">Descaragr CV</a></li>
-        </div> 
-      </ul>     
+          <li><a class="link_submenu" href="#perfil">Sobre mi</a></li>
+          <li><a class="link_submenu" href="#animado">Proyectos</a></li>
+          <li><a class="link_submenu" href="assets/pdf/CV_Rafa_Martínez.pdf" target="_blank">Descaragr CV</a></li>
+        </div>
+      </ul>
     </nav>
     <div id="perfil">
-        <h1 id="titulo1">Sobre mi</h1>
-        <p id="barra">______________________________________________________________________________</p>
-        <div class="perfil">
-          <h4>Me presento.</h4><br>
-          <h5>Soy Rafa, y soy un estudiante de grado superior en desarrollo web. Inicié en este mundo de la programación con el objetivo de cambiar el rumbo de mi vida, aprender cosas nuevas y de crecer a nivel tanto personal como laboral.<img src="assets/imagenes/Captura.png" alt="foto"></h5><br><br>
-          <h5>Me considero una persona bastante proactiva, con mucha 
-            motivación y creatividad. Por otro lado también tengo habilidades comunicativas que he ido adquiriendo a medida que he ido trabajando de cara al público, por lo que no tengo ningún tipo de problema a la hora de trabajar en equipo.</h5>
-          <br><br>
-          <h5>Poseo mi opinión pero no dejo que eso me impida conocer la opinión de los demás o lo que piensan, ya que es precisamente esto lo que nos hace crecer y aprender de nuestros errores.</h5>
-        </div>
+      <h1 id="titulo1">Sobre mi</h1>
+      <p id="barra">______________________________________________________________________________</p>
+      <div class="perfil">
+        <h4>Me presento.</h4><br>
+        <h5>Soy Rafa, y soy un estudiante de grado superior en desarrollo web. Inicié en este mundo de la programación
+          con el objetivo de cambiar el rumbo de mi vida, aprender cosas nuevas y de crecer a nivel tanto personal como
+          laboral.<img src="assets/imagenes/Captura.png" alt="foto"></h5><br><br>
+        <h5>Me considero una persona bastante proactiva, con mucha
+          motivación y creatividad. Por otro lado también tengo habilidades comunicativas que he ido adquiriendo a
+          medida que he ido trabajando de cara al público, por lo que no tengo ningún tipo de problema a la hora de
+          trabajar en equipo.</h5>
+        <br><br>
+        <h5>Poseo mi opinión pero no dejo que eso me impida conocer la opinión de los demás o lo que piensan, ya que es
+          precisamente esto lo que nos hace crecer y aprender de nuestros errores.</h5>
+      </div>
     </div>
     <div class="animado" id="animado">
-        <h1 id="titulo2">Mis proyectos</h1>
-        <p id="barra2">______________________________________________________________________________</p>
-        <br><br>
-        <h5>En esta sección podrás acceder a los proyectos o trabajos que he considerado más relevantes. Igualmente puedes ver mi GitHub o bien desde <a href="https://github.com/rafaml1994?tab=repositories" id="link" target="_blank">aquí</a> </h6>
+      <h1 id="titulo2">Mis proyectos</h1>
+      <p id="barra2">______________________________________________________________________________</p>
+      <br><br>
+      <h5>En esta sección podrás acceder a los proyectos o trabajos que he considerado más relevantes. Igualmente puedes
+        ver mi GitHub => <a href="https://github.com/rafaml1994?tab=repositories" id="link"
+          target="_blank">aquí.</a> </h6>
+        <div>
+
+
           <div class="flexcards">
-            <!-- <div class="cardd" onmouseover="mostrarTexto(0)"> -->
+            <div class="column">
               <div class="cardd">
-              <figure>
-                <img class="imagenScale" src="/assets/imagenes/dockerimagen1.jpg" alt="...">
-              </figure>
-              <div class="background">
-                <div class="texto">
-                  <h4 class="tituloOverlay">PHP con PostgreSQL y Docker</h4>
-                  <p class="textoOverlay">Este es un proyecto PHP (MVC) en el que trabajaremos con enrutamiento, sesiones y cookies. Mas detalles en el README.txt</p>
-                  <a class="linkOverlay" href="https://github.com/rafaml1994/php_routing_sesiones_v3" target="_blank">Ir a proyecto</a>
+                <figure>
+                  <img class="imagenScale" src="/assets/imagenes/dockerimagen1.jpg" alt="...">
+                </figure>
+                <div class="background">
+                  <div class="texto">
+                    <h4 class="tituloOverlay">PHP con PostgreSQL y Docker</h4>
+                    <p class="textoOverlay">Este es un proyecto PHP (MVC) en el que trabajaremos con enrutamiento,
+                      sesiones
+                      y cookies. Mas detalles en el README.txt</p>
+                    <a class="linkOverlay" href="https://github.com/rafaml1994/PHP_MVC_POSTGRES_DOCKER" target="_blank">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Ir a proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardd">
+                <figure>
+                  <img class="imagenScale" src="/assets/imagenes/kalidocker.png" alt="...">
+                </figure>
+                <div class="background">
+                  <div class="texto">
+                    <h4 class="tituloOverlay">VM Kali en Docker</h4>
+                    <p class="textoOverlay">Se trata de una máquina virtual montada en Docker, por medio de un
+                      contenedor
+                      virtualizado sin necesidad de descarganos ningún software.</p>
+                    <a class="linkOverlay" href="https://github.com/rafaml1994/VM_Docker" target="_blank">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Ir a proyecto
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="cardd">
-              <figure>
-                <img class="imagenScale" src="/assets/imagenes/kalidocker.png" alt="...">
-              </figure>
-              <div class="background">
-                <div class="texto">
-                  <h4 class="tituloOverlay">VM Kali en Docker</h4>
-                  <p class="textoOverlay">Se trata de una máquina virtual montada en Docker, por medio de un contenedor virtualizado sin necesidad de descarganos ningún software.</p>
-                  <a class="linkOverlay" href="https://github.com/rafaml1994/VM_Docker" target="_blank">Ir a proyecto</a>
+            <div class="column">
+              <div class="cardd">
+                <figure>
+                  <img class="imagenScale" src="/assets/imagenes/ts.png" alt="...">
+                </figure>
+                <div class="background">
+                  <div class="texto">
+                    <h4 class="tituloOverlay">HTML-CSS-TS</h4>
+                    <p class="textoOverlay">Ejemplo básico de acceso a una FakeApi de productos con Typescript, utilizando fecht y promesas.</p>
+                    <a class="linkOverlay" href="https://github.com/rafaml1994/Ejemplo_HTML_CSS_TS" target="_blank">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Ir a proyecto
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cardd">
+                <figure>
+                  <img class="imagenScale" src="/assets/imagenes/spring.png" alt="...">
+                </figure>
+                <div class="background">
+                  <div class="texto">
+                    <h4 class="tituloOverlay">Proyecto con Spring Boot y Thymeleaf</h4>
+                    <p class="textoOverlay">Este proyecto simula un ejemplo de una web de reseñas gestionadas por sesión.</p>
+                    <a class="linkOverlay" href="https://github.com/rafaml1994/SpringBoot_Thymeleaf" target="_blank">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Ir a proyecto
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="cardd">
-              <figure>
-                <img class="imagenScale" src="/assets/imagenes/js.png" alt="...">
-              </figure>
-              <div class="background">
-                <div class="texto">
-                  <h4 class="tituloOverlay">Portfolio básico en JS</h4>
-                  <p class="textoOverlay">¡ Sí ! Es el código de este mismo portfolio básico en JS, con el que he aprendido a manejar eventos y animaciones.</p>
-                  <a class="linkOverlay" href="https://github.com/rafaml1994/Carta_presentacion_JS" target="_blank">Ir a proyecto</a>
+            <div class="column">
+              <div class="cardd">
+                <figure>
+                  <img class="imagenScale" src="/assets/imagenes/js.png" alt="...">
+                </figure>
+                <div class="background">
+                  <div class="texto">
+                    <h4 class="tituloOverlay">Portfolio básico en JS</h4>
+                    <p class="textoOverlay">¡ Sí ! Es el código de este mismo portfolio básico en JS, con el que he
+                      aprendido a manejar eventos y animaciones.</p>
+                    <a class="linkOverlay" href="https://github.com/rafaml1994/Carta_presentacion_JS" target="_blank">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      Ir a proyecto
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
     </div>
-
     <script src="plugins/particulas/particles.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
     <script src="plugins/particulas/demo/js/lib/stats.js"></script>
     <script src="plugins/particulas/demo/js/app.js"></script>
     <script src="js/script1.js"></script>
-    <script src="js/scriptMobile.js"></script>
 </body>
+
 </html>
