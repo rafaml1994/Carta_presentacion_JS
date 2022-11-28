@@ -406,7 +406,7 @@ h5>a:hover {
     .body {
         height: 0vh;
     }
-
+    
     .web {
         display: none;
     }
@@ -424,7 +424,6 @@ h5>a:hover {
 
     .mobile a {
         padding: 1rem;
-
     }
 
     .mobile ul {
@@ -439,18 +438,19 @@ h5>a:hover {
     .material-symbols-outlined {
         margin-top: -10px;
         color: #fbfbfe;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-
+    .material-symbols-outlined:hover{
+        cursor: pointer !important;
+    }
     .btn_collapse {
         flex-direction: column;
         position: relative;
         color: #fbfbfe;
         width: 100%;
         display: none;
-
     }
-
+    
     .btn_collapse li {
         border-bottom: solid 1px rgba(131, 131, 131, 0.233);
     }
@@ -546,7 +546,6 @@ h5>a:hover {
         -moz-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         background-color: white;
-        touch-action: auto;
         border-radius: 1rem;
     }
 
@@ -581,5 +580,8 @@ h5>a:hover {
 
     .texto a {
         margin-top: -10px;
+    }
+    #particles-js{
+        height: 30rem;
     }
 }

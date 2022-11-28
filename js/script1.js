@@ -40,7 +40,7 @@ function mostrarScroll() {
     for (let i = 0; i < animar.length; i++) {
       const alturaCard = animar[i].offsetTop;
       
-      if (alturaCard - 100 > scrollTop) {
+      if (alturaCard - 400 > scrollTop) {
         
         barra.style.opacity = 1;
         barra.classList.add("animacion3");
@@ -54,16 +54,17 @@ function mostrarScroll() {
         titulo.classList.add("animacion2");
 
         background[i].style.width = "0%";
+
         img[i].style.transform = "";
         texto[i].style.transition = "";
         texto[i].style.opacity = 0;
+        animar[i].style.boxShadow="";
         
       }else{
-        background[i].style.width = "100%";
-        img[i].style.transform = "scale(1.2)";
-        img[i].style.borderRadius = "1rem";
+        background[i].style.width = "100%";  
         texto[i].style.transition = "all 2.5s ease-in-out";
         texto[i].style.opacity = 1;
+        animar[i].style.boxShadow="255, 255, 255, 0.438 white";
       }
     }
   }
@@ -145,3 +146,4 @@ mobile.addEventListener("click", () => {
     });
   }
 });
+
